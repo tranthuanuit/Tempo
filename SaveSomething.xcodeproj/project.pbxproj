@@ -13,6 +13,7 @@
 		1C4A3B3C2368875C00BEEE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A3B3A2368875C00BEEE88 /* Main.storyboard */; };
 		1C4A3B3E2368875E00BEEE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A3B3D2368875E00BEEE88 /* Assets.xcassets */; };
 		1C4A3B412368875E00BEEE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A3B3F2368875E00BEEE88 /* LaunchScreen.storyboard */; };
+		1C4A3B4923688B9300BEEE88 /* UniversalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A3B4823688B9300BEEE88 /* UniversalManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		1C4A3B3D2368875E00BEEE88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C4A3B402368875E00BEEE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C4A3B422368875E00BEEE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4A3B4823688B9300BEEE88 /* UniversalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalManager.swift; sourceTree = "<group>"; };
+		1C4A3B4A2368918300BEEE88 /* SaveSomething.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveSomething.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		1C4A3B332368875C00BEEE88 /* SaveSomething */ = {
 			isa = PBXGroup;
 			children = (
+				1C4A3B4A2368918300BEEE88 /* SaveSomething.entitlements */,
 				1C4A3B342368875C00BEEE88 /* AppDelegate.swift */,
 				1C4A3B362368875C00BEEE88 /* SceneDelegate.swift */,
 				1C4A3B382368875C00BEEE88 /* ViewController.swift */,
@@ -63,6 +67,7 @@
 				1C4A3B3D2368875E00BEEE88 /* Assets.xcassets */,
 				1C4A3B3F2368875E00BEEE88 /* LaunchScreen.storyboard */,
 				1C4A3B422368875E00BEEE88 /* Info.plist */,
+				1C4A3B4823688B9300BEEE88 /* UniversalManager.swift */,
 			);
 			path = SaveSomething;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C4A3B392368875C00BEEE88 /* ViewController.swift in Sources */,
+				1C4A3B4923688B9300BEEE88 /* UniversalManager.swift in Sources */,
 				1C4A3B352368875C00BEEE88 /* AppDelegate.swift in Sources */,
 				1C4A3B372368875C00BEEE88 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,13 +290,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SaveSomething/SaveSomething.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABF57U9QBP;
 				INFOPLIST_FILE = SaveSomething/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thuan.SaveSomething;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prenetics.fitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,13 +309,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SaveSomething/SaveSomething.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABF57U9QBP;
 				INFOPLIST_FILE = SaveSomething/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thuan.SaveSomething;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prenetics.fitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

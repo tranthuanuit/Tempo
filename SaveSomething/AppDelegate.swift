@@ -32,6 +32,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb, let url = userActivity.webpageURL, let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
+            return false
+        }
+        
+        let path = components.path.lowercased()
+        //TODO Switch case
+        guard let screen = UniversalManager.UniversalScreen.init(pathString: path) else {
+            return true
+        }
+        
+        if screen.isActive {
+            UniversalManager.shared.link = path
+        }
+        return true
+    }
 }
 
